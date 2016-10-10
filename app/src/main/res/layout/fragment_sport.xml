@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/struct1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#000"
+        android:layout_marginTop="50dp"
+        />
+    <RadioGroup
+        android:layout_toRightOf="@id/struct1"
+        android:id="@+id/rg_sport"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/rb_talk"
+         style="@style/radiotab2"
+            android:text="会话"
+            />
+        <RadioButton
+            android:id="@+id/rb_goodfriend"
+            android:text="好友"
+            style="@style/radiotab2"
+            />
+        <RadioButton
+            android:id="@+id/rb_qun"
+            android:text="群"
+            style="@style/radiotab2"
+            />
+
+    </RadioGroup>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="11"
+               android:textSize="48dp"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="11"
+               android:textSize="48dp"
+               />
+
+       </LinearLayout>
+
+    </HorizontalScrollView>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/rg_sport"
+        />
+    <FrameLayout
+        android:background="#fff"
+        android:id="@+id/fl_sport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/struct1"
+        android:layout_alignTop="@id/struct1"
+
+        ></FrameLayout>
+
+
+
+</RelativeLayout>
